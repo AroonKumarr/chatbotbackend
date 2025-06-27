@@ -1,23 +1,24 @@
-import pymupdf  # Use the correct module name
-
+import pymupdf as fitz
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
 
+# ✅ Load API key from .env
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(api_key=api_key)
+# ✅ Initialize OpenAI Client
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 app = Flask(__name__)
 CORS(app)
 
-# ✅ Extract text from PDF
+# ✅ Extract text from PDF once
 def extract_pdf_text(pdf_path):
     text = ""
-    with pymupdf.open(pdf_path) as doc:
+    with fitz.open(pdf_path) as doc:
         for page in doc:
             text += page.get_text()
     return text
@@ -33,7 +34,7 @@ def ask():
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": f"Use the following PDF content:\n\n{pdf_text}"},
+                {"role": "system", "content": f"Use the following PDF content to answer questions:\n\n{pdf_text}"},
                 {"role": "user", "content": question}
             ]
         )
