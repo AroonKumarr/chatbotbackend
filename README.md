@@ -39,7 +39,7 @@ Built to be minimal, fast, and professional.
 |----------|---------|----------------|---------|
 | React.js | Flask   | OpenAI API     | Vercel  |
 | Bootstrap | Python | LangChain (LLM) | GitHub Pages (optional) |
-
+            | node.js|
 Additional Tools:
 - Visual Studio Code
 - Git & GitHub
