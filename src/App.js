@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+
+import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf";
+import { getDocument } from "pdfjs-dist"; // ✅ now below GlobalWorkerOptions
+
 import Preloader from "./components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -10,18 +15,12 @@ import ScrollToTop from "./components/ScrollToTop";
 import Chatbot from "./components/Chatbot/Chatbot";
 import ChatbotOpenAI from "./components/Chatbot/ChatbotOpenAI";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-
-import { getDocument } from "pdfjs-dist";
-
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+// ✅ Fix PDF.js worker
+GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -33,7 +32,6 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // ✅ Load and store PDF text in global window object
   useEffect(() => {
     const loadPDF = async () => {
       try {
@@ -66,13 +64,12 @@ function App() {
         <ScrollToTop />
 
         <Routes>
-          {/* ✅ Home with Chatbot rendered on homepage */}
           <Route
             path="/"
             element={
               <>
                 <Home />
-                <Chatbot /> {/* ✅ Chatbot appears on homepage */}
+                <Chatbot />
               </>
             }
           />
