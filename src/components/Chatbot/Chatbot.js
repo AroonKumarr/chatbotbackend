@@ -14,7 +14,7 @@ function Chatbot() {
     setInput("");
 
     try {
-      const res = await fetch("https://replit.com/@neevlevel/chatbot-backend", {
+      const res = await fetch("https://chatbot-backend.neevlevel.repl.co/api/ask", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
