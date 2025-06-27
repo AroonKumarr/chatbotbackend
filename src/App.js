@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
-import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf";
+
 import { getDocument } from "pdfjs-dist"; // ✅ now below GlobalWorkerOptions
+
+import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf";
+
+// ✅ Set worker to CDN version
+GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
 import Preloader from "./components/Pre";
 import Navbar from "./components/Navbar";

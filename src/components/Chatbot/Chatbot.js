@@ -13,16 +13,25 @@ function Chatbot() {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
 
-    try {
-      const res = await fetch("https://chatbot-backend.neevlevel.repl.co/api/ask", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ question: input }),
-      });
+    console.log("Sending to backend...");
+console.log("Request body:", { question: input });
 
-      const data = await res.json();
+try {
+  const res = await fetch("https://chatbot-backend.neevlevel.repl.co/api/ask", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ question: input }),
+  });
+
+  console.log("Received response:", res);
+
+  const data = await res.json();
+  console.log("Parsed data:", data);
+
+
+     
       const botReply = { sender: "bot", text: data.answer };
       setMessages((prev) => [...prev, botReply]);
     } catch (error) {

@@ -35,14 +35,23 @@ function ChatbotOpenAI() {
     setMessages((prev) => [...prev, { sender: "user", text: input }]);
     setInput("");
 
-    try {
-      const res = await fetch("https://chatbot-backend.neevlevel.repl.co/api/ask", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: input, context: pdfText }),
-      });
+    console.log("Sending to backend...");
+console.log("Request body:", { question: input });
 
-      const data = await res.json();
+try {
+  const res = await fetch("https://chatbot-backend.neevlevel.repl.co/api/ask", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ question: input }),
+  });
+
+  console.log("Received response:", res);
+
+  const data = await res.json();
+  console.log("Parsed data:", data);
+
       setMessages((prev) => [...prev, { sender: "bot", text: data.answer }]);
     } catch (err) {
       console.error("API Error:", err);
