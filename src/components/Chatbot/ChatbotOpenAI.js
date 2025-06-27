@@ -36,7 +36,7 @@ function ChatbotOpenAI() {
     setInput("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/ask", {
+      const res = await fetch("https://replit.com/@neevlevel/chatbot-backend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: input, context: pdfText }),
