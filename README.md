@@ -1,76 +1,63 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
+# Re-run after reset: Regenerating the README file content for Aroon Kumar's Portfolio Website v2.0
+
+readme_content = """
+<h1 align="center">🚀 Aroon Kumar | Portfolio Website v2.0</h1>
+
+<p align="center">
+  <a href="https://yourdomain.com" target="_blank"><strong>🔗 yourdomain.com</strong></a>
+</p>
+
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Portfolio Preview" src="./Images/readme-img1.png" />
 </div>
 
-<br/>
+---
 
-<center>
+## 📌 Overview
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+Welcome to the personal portfolio of **Aroon Kumar**, a passionate CS student and AI/ML enthusiast.  
+This modern portfolio showcases my resume, skills, projects, and also features a custom **AI-powered chatbot** that answers questions about my background.
 
-</center>
+Built to be minimal, fast, and professional.
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+---
 
-## TL;DR
+## 🧠 What's Inside
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+- 📄 Resume Viewer & Download (PDF)
+- 💼 Projects Section with Live Demos & Code Links
+- 🤖 AI Chatbot (OpenAI-powered) to answer personal & professional queries
+- 🛠 Skills in AI, ML, NLP, and Web Development
+- 🌐 Fully Responsive Layout (Mobile + Desktop)
+- ⚙️ Hosted using Vercel (Continuous Deployment)
 
-## Built With
+---
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+## ⚙️ Tech Stack
 
-This project was built using these technologies.
+| Frontend | Backend | AI Integration | Hosting |
+|----------|---------|----------------|---------|
+| React.js | Flask   | OpenAI API     | Vercel  |
+| Bootstrap | Python | LangChain (LLM) | GitHub Pages (optional) |
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+Additional Tools:
+- Visual Studio Code
+- Git & GitHub
 
-## Features
+---
 
-**📖 Multi-Page Layout**
+## 📦 Getting Started
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+### Prerequisites
+Make sure the following tools are installed on your system:
 
-**📱 Fully Responsive**
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
 
-## Getting Started
+### Installation Steps
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
-
-## 🛠 Installation and Setup Instructions
-
-1. Installation: `npm install`
-
-2. In the project directory, you can run: `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+1. **Clone the Repository**
+```bash
+git clone https://github.com/aroonkumarr/Portfolio.git
+cd Portfolio

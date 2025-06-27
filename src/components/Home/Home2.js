@@ -16,41 +16,21 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              A LITTLE BIT ABOUT <span className="purple">WHAT I DO</span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+              I’m <b className="purple">Aroon Kumar</b>, a 3rd-year Computer Science student at SZABIST Islamabad with a CGPA of 3.27.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              I'm passionate about <b className="purple">Artificial Intelligence</b>, <b className="purple">Machine Learning</b>, and <b className="purple">Generative AI</b>.
+              I actively build end-to-end AI apps using <b className="purple">Python</b>, <b className="purple">LangChain</b>, <b className="purple">OpenAI</b>, and <b className="purple">Streamlit</b>.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              My projects range from a <i><b className="purple">Home Price Predictor</b></i> to a 
+              <i><b className="purple">Finance QA App using LangChain</b></i> and a 
+              <i><b className="purple">Cold Mail Generator for B2B Outreach</b></i>.
             </p>
+
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -67,7 +47,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/AroonKumarr"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +57,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +67,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/aroon-kumar-38507528a/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +77,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/aroon_lohana_/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

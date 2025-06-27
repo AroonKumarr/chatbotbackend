@@ -5,26 +5,33 @@ import {
   SiPostman,
   SiSlack,
   SiVercel,
-  SiMacos,
+  SiWindows,
+  SiGithub,
+  SiFigma,
 } from "react-icons/si";
+import chatgptLogo from "../../Assets/chatgpt.png";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <SiWindows />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiGithub />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <SiFigma />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <img
+          src={chatgptLogo}
+          alt="ChatGPT"
+          style={{ width: "70px", height: "70px" }}
+        />
       </Col>
     </Row>
   );
