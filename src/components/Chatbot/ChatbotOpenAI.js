@@ -39,7 +39,7 @@ function ChatbotOpenAI() {
 console.log("Request body:", { question: input });
 
 try {
-  const res = await fetch("https://chatbot-backend.neevlevel.repl.co/api/ask", {
+  const res = await fetch("https://aroon.pythonanywhere.com/api/ask", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
