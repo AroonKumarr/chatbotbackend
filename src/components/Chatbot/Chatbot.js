@@ -14,7 +14,7 @@ function Chatbot() {
     setInput("");
 
     console.log("Sending to backend...");
-console.log("Request body:", { question: input });
+    console.log("Request body:", { question: input });
 
 try {
   const res = await fetch("https://aroon.pythonanywhere.com/api/ask", {
